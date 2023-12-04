@@ -8,14 +8,13 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-logos">
-      <a class="main-logos__logo">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-      </a>
-      <a class="main-logos__logo">
-        <img src="images/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy.">
-      </a>
-    </div>
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38"
+        alt="Логотип Cat Energy.">
+    </a>
+    <a class="main-header__logo">
+      <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy.">
+    </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
@@ -40,6 +39,7 @@
       <div class="promo__wrapper">
         <h2 class="promo__title">Функциональное<br>питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <img class="promo__image" src="images/promo-example.png" width="280" height="270" alt="Пример корма Cat Energy.">
         <a class="button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -51,14 +51,14 @@
           <p class="product-type__description">Ваш кот весит больше собаки и почти утратил способность лазить по
             деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="product-type__catalog-button button" href="catalog.html">Каталог slim</a>
+          <a class="product-type__button button" href="catalog.html">Каталог slim</a>
         </div>
         <div class="products__pro product-type">
           <h3 class="product-type__title">Набор массы</h3>
           <p class="product-type__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
             Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="product-type__catalog-button button" href="catalog.html">Каталог Pro</a>
+          <a class="product-type__button button" href="catalog.html">Каталог Pro</a>
         </div>
       </div>
     </section>
@@ -112,8 +112,10 @@
       </div>
       <h3 class="visually-hidden">Слайдер сравнения кота до и после замены корма на Cat Energy Slim.</h3>
       <div class="example__compare-slider slider">
-        <div class="slider__slide-before"></div>
-        <div class="slider__slide-after"></div>
+        <img class="slider__image slider__image--before" src="#" width="280" height="256" alt="Кот Борис до смены корма на Cat Energy
+        Slim.">
+        <img class="slider__image slider__image--after" src="#" width="280" height="256" alt="Кот Борис после смены корма на Cat Energy
+        Slim.">
       </div>
     </section>
   </main>
@@ -126,7 +128,7 @@
           <p class="contacts__headline">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img src="images/map-mobile@2x.jpg" width="320" height="362" alt="Наше местоположение на карте.">
+        <img src="images/map-mobile.jpg" width="320" height="362" alt="Наше местоположение на карте.">
       </div>
       <a class="main-footer__logo">
         <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
@@ -138,7 +140,8 @@
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте.</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе.</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе.</a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме.</a>
