@@ -4,16 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38"
-        alt="Логотип Cat Energy.">
+      <picture class="main-header__logo-image">
+        <source media="(min-width: 1200px)" srcset="images/logo-desktop.svg" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+      </picture>
     </a>
     <a class="main-header__logo">
-      <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy.">
+      <picture class="main-header__logo-text">
+        <img src="images/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy.">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -39,7 +47,10 @@
       <div class="promo__wrapper">
         <h2 class="promo__title">Функциональное<br>питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="images/promo-example.png" width="280" height="270" alt="Пример корма Cat Energy.">
+        <picture class="promo__image">
+          <img src="images/promo-example@1x.png" srcset="images/promo-example@2x.png 2x" width="280" height="270"
+            alt="Пример корма Cat Energy.">
+        </picture>
         <a class="button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -56,8 +67,7 @@
         <div class="products__pro product-type">
           <h3 class="product-type__title">Набор массы</h3>
           <p class="product-type__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
-            Pro
-            поможет вашему коту нарастить необходимые мышцы!</p>
+            Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="product-type__button button" href="catalog.html">Каталог Pro</a>
         </div>
       </div>
@@ -112,13 +122,17 @@
       </div>
       <h3 class="visually-hidden">Слайдер сравнения кота до и после замены корма на Cat Energy Slim.</h3>
       <div class="example__compare-slider slider">
-        <img class="slider__image slider__image--before" src="images/cat-before.png" width="280" height="256" alt="Кот Борис до смены корма на Cat Energy
-        Slim.">
+        <picture class="slider__image slider__image--before">
+          <img src="images/cat-before@1x.png" srcset="images/cat-before@2x.png 2x" width="280" height="256"
+            alt="Кот Борис до смены корма на Cat Energy Slim.">
+        </picture>
         <button class="slider__button" type="button">
           <span class="visually-hidden">Потяните чтобы увидеть результат изменения кота Бориса.</span>
         </button>
-        <img class="slider__image slider__image--after" src="images/cat-after.png" width="280" height="256" alt="Кот Борис после смены корма на Cat Energy
-        Slim.">
+        <picture class="slider__image slider__image--after">
+          <img src="images/cat-after@1x.png" srcset="images/cat-after@2x.png 2x" width="280" height="256"
+            alt="Кот Борис после смены корма на Cat Energy Slim.">
+        </picture>
       </div>
     </section>
   </main>
@@ -131,10 +145,19 @@
           <p class="contacts__headline">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img src="images/map-mobile.jpg" width="320" height="362" alt="Наше местоположение на карте.">
+        <picture class="contacts__location">
+          <source type="image/png" media="(min-width: 1440px)"
+            srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="768" height="400">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="image/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="1440" height="400">
+          <img src="images/map-mobile@1x.png" srcset="image/map-mobile@2x.png 2x" width="320" height="362"
+            alt="Наше местоположение на карте.">
+        </picture>
       </div>
       <a class="main-footer__logo" href="index.html">
-        <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
+        <picture class="main-footer__logo-text">
+          <img src="images/logo-text.svg" width="128" height="24" alt="Надпись Cat Energy.">
+        </picture>
       </a>
       <div class="main-footer__social social">
         <h2 class="visually-hidden">Мы в социальных сетях.</h2>
