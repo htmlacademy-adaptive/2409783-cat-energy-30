@@ -1,0 +1,14 @@
+.button {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $color-secondary;
+  text-decoration: none;
+
+  &--all {
+    color: $text-color-secondary;
+    background-color: $background-color-secondary;
+  }
+}
