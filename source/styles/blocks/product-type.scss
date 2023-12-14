@@ -1,0 +1,40 @@
+.product-type {
+  background-color: $background-color-secondary;
+}
+
+.product-type__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.product-type__description {
+  color: $text-color-secondary;
+  font-family: $text-font;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: 768px) {
+    color: $text-color-primary;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.product-type__button {
+  color: $text-color-primary;
+  background-color: $background-color-secondary;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}

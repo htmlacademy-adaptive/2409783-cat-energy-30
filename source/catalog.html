@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -12,16 +13,15 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-logos">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <picture class="main-header__logo-image">
           <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="70" height="59">
           <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
           <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
       </a>
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <picture class="main-header__logo-text">
-          <source width="118" height="21" media="(min-width: 1200px)">
           <img src="images/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy.">
         </picture>
       </a>
@@ -46,11 +46,11 @@
 
   <main class="main-container">
     <h1 class="main-container__title">Каталог продукции</h1>
-    <section class="products">
-      <div class="products__wrapper">
+    <section class="products-catalog">
+      <div class="products-catalog__wrapper">
         <h2 class="visually-hidden">Каталог основных товаров</h2>
-        <div class="products__list">
-          <article class="products__item product-card">
+        <div class="products-catalog__list">
+          <article class="products-catalog__item product-card">
             <div class="product-card__content">
               <a class="product-card__link" href="#">
                 <picture class="product-card__image">
@@ -78,7 +78,7 @@
             </div>
             <a class="product-card__button button" href="#">Заказать</a>
           </article>
-          <article class="products__item product-card">
+          <article class="products-catalog__item product-card">
             <div class="product-card__content">
               <a class="product-card__link" href="#">
                 <picture class="product-card__image">
@@ -106,7 +106,7 @@
             </div>
             <a class="product-card__button button" href="#">Заказать</a>
           </article>
-          <article class="products__item product-card">
+          <article class="products-catalog__item product-card">
             <div class="product-card__content">
               <a class="product-card__link" href="#">
                 <picture class="product-card__image">
@@ -134,7 +134,7 @@
             </div>
             <a class="product-card__button button" href="#">Заказать</a>
           </article>
-          <article class="products__item product-card">
+          <article class="products-catalog__item product-card">
             <div class="product-card__content">
               <a class="product-card__link" href="#">
                 <picture class="product-card__image">
@@ -162,7 +162,7 @@
             </div>
             <a class="product-card__button button" href="#">Заказать</a>
           </article>
-          <article class="products__item product-card">
+          <article class="products-catalog__item product-card">
             <div class="product-card__content">
               <a class="product-card__link" href="#">
                 <picture class="product-card__image">
@@ -190,7 +190,7 @@
             </div>
             <a class="product-card__button button" href="#">Заказать</a>
           </article>
-          <article class="products__item product-card">
+          <article class="products-catalog__item product-card">
             <div class="product-card__content">
               <a class="product-card__link" href="#">
                 <picture class="product-card__image">
@@ -218,7 +218,7 @@
             </div>
             <a class="product-card__button button" href="#">Заказать</a>
           </article>
-          <article class="products__item product-card">
+          <article class="products-catalog__item product-card">
             <div class="product-card__content">
               <a class="product-card__link" href="#">
                 <picture class="product-card__image">
@@ -246,8 +246,8 @@
             </div>
             <a class="product-card__button button" href="#">Заказать</a>
           </article>
-          <div class="products__item products__item--more product-card">
-            <h3 class="product-card__title">Показать еще 100500 товаров</h3>
+          <div class="products-catalog__item products-catalog__item--more product-card">
+            <h3 class="product-card__title product-card__title--more">Показать еще 100500 товаров</h3>
             <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
             <button class="product-card__button button button--all" type="button">Показать все</button>
           </div>
@@ -267,7 +267,7 @@
                   <p class="additional-product-card__price">200 ₽</p>
                 </div>
               </div>
-              <a class="button">Заказать</a>
+              <a class="button" href="#">Заказать</a>
             </li>
             <li class="additional-products__item additional-product-card">
               <div class="additional-product-card__content">
@@ -277,7 +277,7 @@
                   <p class="additional-product-card__price">50 ₽</p>
                 </div>
               </div>
-              <a class="button">Заказать</a>
+              <a class="button" href="#">Заказать</a>
             </li>
             <li class="additional-products__item additional-product-card">
               <div class="additional-product-card__content">
@@ -287,7 +287,7 @@
                   <p class="additional-product-card__price">100 ₽</p>
                 </div>
               </div>
-              <a class="button">Заказать</a>
+              <a class="button" href="#">Заказать</a>
             </li>
             <li class="additional-products__item additional-product-card">
               <div class="additional-product-card__content">
@@ -297,7 +297,7 @@
                   <p class="additional-product-card__price">300 ₽</p>
                 </div>
               </div>
-              <a class="button">Заказать</a>
+              <a class="button" href="#">Заказать</a>
             </li>
           </ul>
           <div class="additional-products__gift gift">
@@ -312,9 +312,12 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Наше местоположение</h2>
-        <div class="contacts__content contacts-content">
+        <div class="contacts__content contacts-content contacts-content--primary">
           <p class="contacts__headline">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts__address">
+            <p class="contacts__street">ул. Большая Конюшенная, д.19/8</p>
+            <p class="contacts__city">Санкт-Петербург</p>
+          </div>
         </div>
         <picture class="contacts__location">
           <source type="image/png" media="(min-width: 1280px)"

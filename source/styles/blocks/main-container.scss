@@ -1,0 +1,21 @@
+.main-container__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.main-container__headline {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

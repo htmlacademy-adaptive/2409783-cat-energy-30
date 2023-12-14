@@ -1,0 +1,22 @@
+.contacts__headline {
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contacts__address {
+  color: $text-color-secondary;
+  font-family: $text-font;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}

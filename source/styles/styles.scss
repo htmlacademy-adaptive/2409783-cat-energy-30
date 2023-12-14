@@ -1,7 +1,40 @@
 /* GLOBAL */
+@import "./global/mixins";
+@import "./global/fonts.scss";
 @import "./global/variables.scss";
 @import "./global/global.scss";
-@import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/nav-list.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/button.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/products.scss";
+@import "./blocks/product-type.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/products-catalog.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/additional-product-card.scss";
+@import "./blocks/gift.scss";
+@import "./blocks/form.scss";
+@import "./blocks/general.scss";
+@import "./blocks/text-input.scss";
+@import "./blocks/program-types.scss";
+@import "./blocks/radio-button.scss";
+@import "./blocks/owner-info.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/additional-products-info.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/contacts-content.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";

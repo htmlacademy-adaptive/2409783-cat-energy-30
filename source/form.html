@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -12,16 +13,15 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-logos">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <picture class="main-header__logo-image">
           <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="70" height="59">
           <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
           <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
       </a>
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <picture class="main-header__logo-text">
-          <source width="118" height="21" media="(min-width: 1200px)">
           <img src="images/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy.">
         </picture>
       </a>
@@ -101,30 +101,30 @@
       </fieldset>
       <fieldset class="form__section comment">
         <legend class="form__title">Комментарий</legend>
-        <textarea class="comment__input" name="comment">Расскажите обо всех повадках кота</textarea>
+        <textarea class="form__input" name="comment">Расскажите обо всех повадках кота</textarea>
       </fieldset>
       <fieldset class="form__additional additional-products-info">
         <legend class="form__title">Дополнительно</legend>
         <ul class="form__list">
-          <li class="form__item additional-item">
+          <li class="form__item">
             <label class="form__label checkbox">
               <input class="form__input" type="checkbox" name="sweetener" id="sweetener" checked>
               Сахарозаменитель
             </label>
           </li>
-          <li class="form__item additional-item">
+          <li class="form__item">
             <label class="form__label checkbox">
               <input class="form__input" type="checkbox" name="water" id="water">
               Питьевая вода
             </label>
           </li>
-          <li class="form__item additional-item">
+          <li class="form__item">
             <label class="form__label checkbox">
               <input class="form__input" type="checkbox" name="milk" id="milk">
               Молоко
             </label>
           </li>
-          <li class="form__item additional-item">
+          <li class="form__item">
             <label class="form__label checkbox">
               <input class="form__input" type="checkbox" name="vitamins" id="vitamins">
               Витамины
@@ -143,9 +143,12 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Наше местоположение</h2>
-        <div class="contacts__content contacts-content">
+        <div class="contacts__content contacts-content contacts-content--primary">
           <p class="contacts__headline">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts__address">
+            <p class="contacts__street">ул. Большая Конюшенная, д.19/8</p>
+            <p class="contacts__city">Санкт-Петербург</p>
+          </div>
         </div>
         <picture class="contacts__location">
           <source type="image/png" media="(min-width: 1280px)"
