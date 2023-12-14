@@ -2,7 +2,11 @@
   background-color: $background-color-secondary;
 
   @media (min-width: 768px) {
-    background-color: $background-color-primary;
+    background: linear-gradient($background-color-primary, $background-color-primary 57%, $background-color-secondary 57%, $background-color-secondary);
+  }
+
+  @media (min-width: 1280px) {
+    background: linear-gradient($background-color-primary, $background-color-primary 23%, $background-color-secondary 23%, $background-color-secondary);
   }
 }
 
