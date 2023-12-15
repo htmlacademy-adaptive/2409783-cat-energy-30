@@ -9,6 +9,10 @@
     line-height: 20px;
     background: linear-gradient($background-color-primary, $background-color-primary 16%, $background-color-secondary 16%, $background-color-secondary);
   }
+
+  &--more {
+    background: $background-color-primary;
+  }
 }
 
 .product-card__link {
