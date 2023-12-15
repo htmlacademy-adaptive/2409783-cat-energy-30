@@ -9,18 +9,6 @@
   }
 }
 
-.advantages__icon {
-  display: block;
-  width: 30px;
-  height: 32px;
-  background-color: $color-secondary;
-  padding: 14px 15px;
-
-  @media (min-width: 768px) {
-    padding: 24px 25px;
-  }
-}
-
 .advantages__description {
   color: $text-color-secondary;
   font-family: $text-font;
