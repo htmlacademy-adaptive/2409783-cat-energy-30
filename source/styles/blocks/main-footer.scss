@@ -1,3 +1,26 @@
 .main-footer {
   background-color: $background-color-secondary;
 }
+
+.main-footer__content {
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 92%;
+    min-width: 708px;
+    padding: 55px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 84%;
+    min-width: 1220px;
+    padding: 66px 30px;
+    margin: 0 auto;
+  }
+}

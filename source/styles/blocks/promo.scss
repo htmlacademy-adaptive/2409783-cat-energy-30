@@ -1,10 +1,36 @@
 .promo {
-  background-color: $color-secondary;
+  background: linear-gradient($color-secondary, $color-secondary 63%, $background-color-primary 63%, $background-color-primary);
   color: #ffffff;
+  margin: 0 auto;
+  padding: 27px 30px 0;
 
-  @media (min-width: 768px) {
-    background-color: $background-color-primary;
+  @media (min-width: $tablet-width) {
+    background: $background-color-primary;
     color: $text-color-primary;
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 84%;
+    min-width: 1220px;
+    background-color: transparent;
+    padding-top: 110px;
+    margin-bottom: 82px;
+  }
+}
+
+.promo__wrapper {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    text-align: left;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 530px;
+    padding-left: 80px;
   }
 }
 
@@ -12,8 +38,9 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -24,14 +51,14 @@
   line-height: 14px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 .promo__button {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
   }

@@ -4,16 +4,16 @@
   font-size: 20px;
   line-height: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: $desktop-width) {
+    padding: 0 30px;
     font-size: 20px;
     line-height: normal;
     color: #ffffff;
-    background-color: $color-secondary;
   }
 }
 
@@ -21,7 +21,7 @@
   color: $text-color-primary;
   text-decoration: none;
 
-  @media (min-width: 1280px) {
+  @media (min-width: $desktop-width) {
     color: #ffffff;
   }
 }

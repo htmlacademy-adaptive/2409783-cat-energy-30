@@ -4,7 +4,7 @@
   font-size: 12px;
   line-height: 16px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     background: linear-gradient($background-color-primary, $background-color-primary 16%, $background-color-secondary 16%, $background-color-secondary);
@@ -26,7 +26,7 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
   }
@@ -37,7 +37,7 @@
 }
 
 .product-card__description {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     line-height: 18px;
   }
 }
