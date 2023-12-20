@@ -17,11 +17,13 @@
   }
 }
 
-.nav-list__item a {
+.nav-list__link {
   color: $text-color-primary;
   text-decoration: none;
 
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
+  &--main-page{
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 }

@@ -14,7 +14,7 @@
     width: 84%;
     min-width: 1220px;
     background-color: transparent;
-    padding-top: 110px;
+    padding-top: 29px;
     margin-bottom: 82px;
   }
 }
@@ -23,14 +23,35 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 618px;
+    width: 708px;
     text-align: left;
-    padding-left: 90px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 90px 416px 205px;
+    grid-template-rows: auto auto 54px 526px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 530px;
+    width: 920px;
     padding-left: 80px;
+    margin: 0;
+    grid-template-columns: 367px 552px;
+    grid-template-rows: auto 72px 54px auto;
+  }
+}
+
+.promo__image {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 2/5;
+    margin-top: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/-1;
   }
 }
 
@@ -43,6 +64,15 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin-top: 81px;
   }
 }
 
@@ -50,10 +80,19 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 }
 
@@ -61,5 +100,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 }

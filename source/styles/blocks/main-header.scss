@@ -1,6 +1,8 @@
 .main-header{
-  @media (min-width: $desktop-width) {
-    background: linear-gradient(to right, $background-color-primary, $background-color-primary 50%, $color-secondary 50%, $color-secondary);
+  &--main-page{
+    @media (min-width: $desktop-width) {
+      background: linear-gradient(to right, $background-color-primary, $background-color-primary 50%, $color-secondary 50%, $color-secondary);
+    }
   }
 }
 

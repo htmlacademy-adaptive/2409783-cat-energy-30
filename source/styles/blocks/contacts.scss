@@ -1,3 +1,7 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__content {
   padding: 26px 20px;
   background-color: $background-color-primary;
@@ -15,6 +19,9 @@
     width: 407px;
     padding: 60px 78px 60px 80px;
     gap: 87px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
   }
 
   &--primary {
