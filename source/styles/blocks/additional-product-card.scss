@@ -1,3 +1,18 @@
+.additional-product-card {
+  width: 280px;
+  padding: 13px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 895px;
+    padding: 15px 0 17px;
+  }
+}
+
 .additional-product-card__title {
   color: #222222;
   font-size: 16px;
