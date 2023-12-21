@@ -82,3 +82,9 @@
 .contacts__city {
   margin: 0;
 }
+
+.contacts__location img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
