@@ -1,5 +1,16 @@
 .product-type {
+  padding: 30px 33px 18px 20px;
   background-color: $background-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 39%;
+    min-width: 457px;
+    padding: 77px 61px 59px 52px;
+  }
 }
 
 .product-type__title {
@@ -8,7 +19,7 @@
   line-height: 37px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -20,7 +31,7 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     color: $text-color-primary;
     font-size: 16px;
     line-height: 24px;
@@ -33,7 +44,7 @@
   font-size: 16px;
   line-height: 16px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
   }

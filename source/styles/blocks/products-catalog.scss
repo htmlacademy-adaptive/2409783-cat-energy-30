@@ -1,0 +1,18 @@
+.products-catalog__list {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 60px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+    margin-bottom: 76px;
+  }
+}
