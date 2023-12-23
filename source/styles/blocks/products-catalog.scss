@@ -1,12 +1,9 @@
 .products-catalog__list {
   margin: 0;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
