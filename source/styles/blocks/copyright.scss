@@ -7,14 +7,35 @@
 }
 
 .copyright__link {
-  display: flex;
-  align-items: center;
-  gap: 139px;
+  text-align: left;
+  display: block;
   width: 280px;
   margin: 0 auto;
+  padding: 7px 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../images/icons/stack.svg#logo-html-academy");
+    mask-repeat: no-repeat;
+    background-color: $social-icon-color;
+  }
+
+  &:hover::after {
+    background-color: $color-secondary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
-    gap: 23px;
     width: 168px;
   }
 }

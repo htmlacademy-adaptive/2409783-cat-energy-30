@@ -1,13 +1,23 @@
 .promo {
   background: linear-gradient($color-secondary, $color-secondary 63%, $background-color-primary 63%, $background-color-primary);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85) 63%, $background-color-primary 63%, $background-color-primary),
+  image-set(
+    url("../../images/promo-background-mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/promo-background-mobile@2x.webp") type("image/webp") 2x,
+    url("../../images/promo-background-mobile@1x.png") type("image/png") 1x,
+    url("../../images/promo-background-mobile@2x.png") type("image/png") 2x
+  );
+  background-size: auto, contain;
+  background-position: top center;
+  background-repeat: no-repeat;
   color: #ffffff;
   margin: 0 auto;
-  padding: 27px 30px 0;
+  padding: 27px 20px 0;
 
   @media (min-width: $tablet-width) {
     background: $background-color-primary;
     color: $text-color-primary;
-    padding-top: 65px;
+    padding: 65px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +31,8 @@
 
 .promo__wrapper {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -101,11 +113,16 @@
 }
 
 .promo__button {
+  height: 40px;
+  width: 280px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
     grid-column: 2/3;
     grid-row: 3/4;
+    height: 54px;
+    width: 244px;
   }
 
   @media (min-width: $desktop-width) {

@@ -11,3 +11,47 @@
   flex-wrap: wrap;
   gap: 24px;
 }
+
+.social__item {
+  position: relative;
+  width: 28px;
+  height: 22px;
+}
+
+.social__link {
+  display: block;
+  position: relative;
+  width: 28px;
+  height: 22px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 22px;
+    mask-repeat: no-repeat;
+    background-color: $social-icon-color;
+  }
+
+  &:hover::after {
+    background-color: $color-secondary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vkontakte {
+    mask-image: url("../../images/icons/stack.svg#vkontakte");
+  }
+
+  &--youtube {
+    mask-image: url("../../images/icons/stack.svg#youtube");
+  }
+
+  &--telegram {
+    mask-image: url("../../images/icons/stack.svg#telegram");
+  }
+}
