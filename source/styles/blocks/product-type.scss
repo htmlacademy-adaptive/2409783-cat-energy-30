@@ -204,13 +204,7 @@
     line-height: normal;
 
     &::after {
-      top: 14px;
-      right: -57px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
+      top: 10px;
       right: -57px;
     }
   }
