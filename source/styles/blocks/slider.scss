@@ -1,42 +1,65 @@
 .slider {
-  display: flex;
+  display: grid;
   position: relative;
   margin: 0 auto;
   width: 280px;
+  grid-template-columns: 280px;
 
   @media (min-width: $tablet-width) {
     width: 560px;
+    grid-template-columns: 560px;
+  }
+}
+
+.slider__image-wrapper {
+  overflow: hidden;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  background-color: $background-color-secondary;
+
+  @media (min-width:$tablet-width) {
+    background: linear-gradient($background-color-primary, $background-color-primary 151px, $background-color-secondary 151px, $background-color-secondary);
+  }
+
+  @media (min-width:$desktop-width) {
+    background: linear-gradient($background-color-primary, $background-color-primary 138px, $background-color-secondary 138px, $background-color-secondary);
+  }
+
+  &--before {
+    z-index: 3;
   }
 }
 
 .slider__button {
   position: absolute;
-  top: 108px;
-  left: 120px;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #666666;
-  background-color: $background-color-primary;
-  border-radius: 50%;
+  padding: 0;
+  top: 0;
+  left: 138px;
+  width: 4px;
+  height: 256px;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 5;
 
   &::before {
     position: absolute;
-    top: -108px;
-    left: 16px;
     content: "";
-    width: 4px;
-    height: 256px;
-    background-color: #666666;
-    border-radius: 2px;
+    top: 108px;
+    left: -18px;
+    width: 36px;
+    height: 36px;
+    background-color: $background-color-primary;
+    border: 2px solid #666666;
+    border-radius: 50%;
   }
 
   &::after {
     position: absolute;
     content: "";
-    top: 9px;
-    left: 6px;
+    top: 119px;
+    left: -10px;
     width: 24px;
     height: 18px;
     mask-image: url("../../images/icons/stack.svg#slider-toggle");
@@ -45,9 +68,12 @@
   }
 
   &:hover {
-    border: 2px solid $color-secondary;
+    background-color: $color-secondary;
 
-    &::before,
+    &::before{
+      border: 2px solid $color-secondary;
+    }
+
     &::after {
       background-color: $color-secondary;
     }
@@ -58,26 +84,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 236px;
-    left: 260px;
+    top: 0;
+    left: 278px;
+    height: 512px;
 
     &::before {
-      top: -236px;
-      left: 16px;
-      height: 512px;
+      top: 236px;
     }
-  }
-}
 
-.slider__image {
-  &--before {
-    mask-image: linear-gradient(to right, $background-color-primary, $background-color-primary 50%, transparent 50%, transparent);
-    mask-repeat: no-repeat;
-  }
-
-  &--after {
-    transform: translateX(-100%);
-    mask-image: linear-gradient(to left, $background-color-primary, $background-color-primary 50%, transparent 50%, transparent);
-    mask-repeat: no-repeat;
+    &::after {
+      top: 247px;
+    }
   }
 }

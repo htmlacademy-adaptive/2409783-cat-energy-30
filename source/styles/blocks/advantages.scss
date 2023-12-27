@@ -33,6 +33,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  counter-reset: advantage;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -81,9 +82,11 @@
     }
 
     &::after {
+      content: counter(advantage);
+      counter-increment: advantage;
       text-align: right;
       color: #f2f2f2;
-      font-family: Oswald;
+      font-family: $primary-font;
       font-size: 280px;
       line-height: 280px;
       display: block;
@@ -109,11 +112,7 @@
       background-image: url("../../images/icon-healthy.svg"), linear-gradient($color-secondary, $color-secondary);
     }
 
-    @media (min-width: $tablet-width) {
-      &::after {
-        content: "1";
-      }
-    }
+
   }
 
   &--easy {
@@ -121,11 +120,7 @@
       background-image: url("../../images/icon-easy.svg"), linear-gradient($color-secondary, $color-secondary);
     }
 
-    @media (min-width: $tablet-width) {
-      &::after {
-        content: "2";
-      }
-    }
+
   }
 
   &--econom {
@@ -133,11 +128,7 @@
       background-image: url("../../images/icon-econom.svg"), linear-gradient($color-secondary, $color-secondary);
     }
 
-    @media (min-width: $tablet-width) {
-      &::after {
-        content: "3";
-      }
-    }
+
   }
 
   &--fast {
@@ -145,11 +136,7 @@
       background-image: url("../../images/icon-fast.svg"), linear-gradient($color-secondary, $color-secondary);
     }
 
-    @media (min-width: $tablet-width) {
-      &::after {
-        content: "4";
-      }
-    }
+
   }
 }
 

@@ -24,3 +24,13 @@
     margin: 0 auto;
   }
 }
+
+.main-footer__logo-text {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
