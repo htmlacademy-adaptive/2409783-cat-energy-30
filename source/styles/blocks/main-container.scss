@@ -1,16 +1,17 @@
 .main-container__wrapper {
-  width: 87%;
   min-width: 280px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: 92%;
-    min-width: 708px;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
     width: 84%;
     min-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -23,7 +24,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 65px 0 84px;
+    margin: 65px 0 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +43,7 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;
+    width: 55%;
   }
 }
 

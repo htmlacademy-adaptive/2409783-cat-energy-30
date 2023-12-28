@@ -1,43 +1,5 @@
 .form {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin: 0;
-  margin-bottom: 32px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
-    gap: 65px;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 70px 80px;
-    margin-bottom: 79px;
-  }
-}
-
-.form__section {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.form__title {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 26px;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
-
-.form__label,
-.form__input {
+  font-family: inherit;
   color: $text-color-secondary;
   font-size: 16px;
   line-height: 18px;
@@ -49,8 +11,236 @@
   }
 }
 
+.form__wrapper {
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    margin-bottom: 79px;
+    width: 84%;
+    min-width: 1220px;
+  }
+}
+
+.form__section {
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+
+  &--general,
+  &--program-types {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 100vw;
+      background-color: #d9d9d9;
+      left: -20px;
+      bottom: 0;
+
+      @media (min-width: $tablet-width) {
+        content: none;
+      }
+    }
+  }
+
+  &--general {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 46%;
+      min-width: 570px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &--program-types {
+    padding-bottom: 19px;
+    padding-top: 22px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 46%;
+      min-width: 570px;
+    }
+  }
+
+  &--owner-info {
+    width: 100%;
+  }
+
+  &--additional-products-info {
+    padding-bottom: 34px;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+      margin-bottom: 52px;
+    }
+  }
+}
+
+.form__section--owner-info .form__title {
+  margin-top: 26px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 76px;
+  }
+}
+
+.form__section--comment .form__title {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
+  }
+}
+
+.form__section--additional-products-info .form__title {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.form__section--program-types .form__list {
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px;
+    margin: 0 40px;
+    border: 1px solid #e7e7e7;
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.form__section--additional-products-info .form__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 104px;
+  }
+}
+
+.form__section--additional-products-info .form__item {
+  @media (min-width: $tablet-width) {
+    width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 222px;
+  }
+}
+
+.form__section--owner-info .form__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    width: 84%;
+    min-width: 1220px;
+  }
+}
+
+.form__section--owner-info .form__item {
+  @media (min-width: $desktop-width) {
+    width: 46%;
+    min-width: 570px;
+  }
+}
+
+.form__title {
+  font-family: $primary-font;
+  color: $text-color-primary;
+  text-transform: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0;
+  display: inline-flex;
+  background-color: $background-color-primary;
+  padding-right: 20px;
+  max-width: 65%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100vw;
+    background-color: $color-secondary;
+    top: 18px;
+    left: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 515px;
+    padding-left: 40px;
+
+    &::before {
+      left: -30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+
+    &::before {
+      left: -70px;
+    }
+  }
+}
+
 .form__legend {
   font-family: $text-font;
+  text-align: center;
   font-size: 14px;
   line-height: 16px;
 
@@ -63,4 +253,68 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.form__textarea-input {
+  font-family: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  display: block;
+  box-sizing: border-box;
+  padding: 14px 13px;
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder{
+    color: inherit;
+    opacity: 1;
+  }
+}
+
+.form__textarea-wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.form__submit-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.form__button {
+  font-family: inherit;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 284px;
+    margin: 0;
+  }
 }
