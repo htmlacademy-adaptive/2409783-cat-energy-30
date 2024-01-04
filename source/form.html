@@ -46,7 +46,7 @@
 
   <main class="main-container">
     <div class="main-container__wrapper">
-      <h1 class="main-container__title">Подбор программы</h1>
+      <h1 class="main-container__title main-container__title--form">Подбор программы</h1>
       <p class="main-container__headline">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="main-container__form form" action="https://echo.htmlacademy.ru/" method="post">
@@ -54,6 +54,7 @@
         <fieldset class="form__section form__section--general">
           <legend class="visually-hidden">Общая информация про питомца</legend>
           <ul class="form__list">
+            <!--если ввод неправильный, добавить text-input--error-->
             <li class="form__item text-input">
               <label class="text-input__label" for="pet-name">Имя:<sup>*</sup></label>
               <input class="text-input__input" type="text" name="pet-name" placeholder="Барсик" id="pet-name" required>
@@ -90,20 +91,16 @@
           <legend class="form__title">Контактные данные (владельца кота)</legend>
           <ul class="form__list">
             <li class="form__item text-input">
-              <label class="text-input__label" for="owner-email">E-mail<sup>*</sup>:</label>
+              <label class="text-input__label" for="owner-email">E-mail:<sup>*</sup></label>
               <input class="text-input__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com"
                 id="owner-email" required>
-              <svg class="text-input__icon text-input__icon" width="20" height="20">
-                <use href="images/icons/stack.svg#icon-email"></use>
-              </svg>
+              <div class="text-input__icon text-input__icon--email" ></div>
             </li>
             <li class="form__item text-input">
               <label class="text-input__label" for="owner-phone">Телефон:<sup>*</sup></label>
               <input class="text-input__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90"
                 id="owner-phone" required>
-                <svg class="text-input__icon" width="20" height="20">
-                  <use href="images/icons/stack.svg#icon-phone"></use>
-                </svg>
+              <div class="text-input__icon text-input__icon--phone" ></div>
             </li>
           </ul>
         </fieldset>
@@ -150,7 +147,7 @@
       <div class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Наше местоположение</h2>
         <div class="contacts__content contacts__content--primary">
-          <p class="contacts__headline">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__headline">Приглашаем<br>к сотрудничеству дилеров!</p>
           <div class="contacts__address">
             <p class="contacts__street">ул. Большая Конюшенная, д.19/8</p>
             <p class="contacts__city">Санкт-Петербург</p>

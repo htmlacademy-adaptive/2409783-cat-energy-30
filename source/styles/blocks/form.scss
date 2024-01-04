@@ -4,6 +4,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -81,7 +82,7 @@
   }
 
   &--program-types {
-    padding-bottom: 19px;
+    padding-bottom: 18px;
     padding-top: 22px;
 
     @media (min-width: $tablet-width) {
@@ -97,6 +98,11 @@
 
   &--owner-info {
     width: 100%;
+    margin-top: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 
   &--additional-products-info {
@@ -111,11 +117,9 @@
 }
 
 .form__section--owner-info .form__title {
-  margin-top: 26px;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
     margin-bottom: 76px;
   }
 }
@@ -204,7 +208,7 @@
   display: inline-flex;
   background-color: $background-color-primary;
   padding-right: 20px;
-  max-width: 65%;
+  max-width: 66%;
   position: relative;
 
   &::before {
@@ -213,7 +217,7 @@
     height: 2px;
     width: 100vw;
     background-color: $color-secondary;
-    top: 18px;
+    top: 14px;
     left: 0;
     z-index: -1;
   }
@@ -233,13 +237,15 @@
     margin-left: -40px;
 
     &::before {
-      left: -70px;
+      width: 120vw;
+      left: -100px;
     }
   }
 }
 
 .form__legend {
   font-family: $text-font;
+  text-transform: none;
   text-align: center;
   font-size: 14px;
   line-height: 16px;
@@ -270,10 +276,12 @@
 .form__textarea-input {
   font-family: inherit;
   color: inherit;
+  font-size: inherit;
+  line-height: inherit;
   text-transform: uppercase;
   display: block;
   box-sizing: border-box;
-  padding: 14px 13px;
+  padding: 13px 14px;
   width: 100%;
   min-height: 150px;
   border: 1px solid #e7e7e7;
@@ -297,10 +305,13 @@
 }
 
 .form__submit-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     margin-left: 40px;
-    display: flex;
-    align-items: center;
     gap: 60px;
   }
 
@@ -312,8 +323,10 @@
 .form__button {
   font-family: inherit;
   margin-bottom: 21px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
+    width: 40%;
     min-width: 284px;
     margin: 0;
   }

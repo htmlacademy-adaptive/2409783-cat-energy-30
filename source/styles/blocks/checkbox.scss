@@ -1,6 +1,6 @@
 .checkbox__label {
   margin-left: 45px;
-  min-height: 30px;
+  min-height: 28px;
   display: flex;
   align-items: center;
   position: relative;
@@ -38,6 +38,8 @@
 
   @media (min-width: $tablet-width) {
     min-height: 40px;
+    margin-left: 60px;
+
     &::before {
       width: 36px;
       height: 36px;

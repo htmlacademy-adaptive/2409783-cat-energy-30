@@ -19,7 +19,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  margin: 27px 0 41px;
+  margin: 27px 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -30,6 +30,14 @@
   @media (min-width: $desktop-width) {
     margin-top: 74px;
   }
+
+  &--catalog {
+    margin-bottom: 41px;
+  }
+
+  &--form {
+    margin-bottom: 36px;
+  }
 }
 
 .main-container__headline {
@@ -38,6 +46,7 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 39px;
+  width: 81%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -23,6 +23,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 30px;
   }
 }
 
@@ -38,7 +39,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 37px 154px;
+    gap: 37px 139px;
     max-width: 900px;
   }
 
@@ -95,10 +96,13 @@
       height: 280px;
       background-repeat: no-repeat;
       background-position: center;
-      top: 15px;
-      left: auto;
+      top: 0;
       right: 0px;
       z-index: -1;
+    }
+
+    &:first-child::after {
+      right: 20px;
     }
   }
 
@@ -150,5 +154,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.advantages__description br{
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: none;;
   }
 }

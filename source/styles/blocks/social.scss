@@ -1,6 +1,32 @@
 .social {
   margin: 0 auto;
   width: 132px;
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #d9d9d9;
+    width: 280px;
+    height: 1px;
+    left: -74px;
+  }
+
+  &::before {
+    top: -23px;
+  }
+
+  &::after {
+    bottom: -18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .social__list {

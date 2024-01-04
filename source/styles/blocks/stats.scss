@@ -34,14 +34,14 @@
 
 .stats__item {
   width: 44%;
-  height: 56px;
+  height: 54px;
   position: relative;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
-    width: 162px;
-    height: 72px;
+    width: 160px;
+    height: 70px;
   }
 }
 
@@ -125,7 +125,13 @@
 }
 
 .stats__total-sum-number {
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    display: inline-block;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 63px;
+    margin-top: 0;
   }
 }
