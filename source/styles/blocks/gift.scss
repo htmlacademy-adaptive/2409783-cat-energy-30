@@ -20,7 +20,8 @@
     url("../../images/gift-background-tablet@2x.webp") type("image/webp") 2x,
     url("../../images/gift-background-tablet@1x.png") type("image/png") 1x,
     url("../../images/gift-background-tablet@2x.png") type("image/png") 2x
-  );
+    );
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,8 +66,8 @@
     width: 23%;
 
     &::before {
-      top: -14px;
-      left: -344px;
+      top: -12px;
+      left: -306px;
     }
   }
 

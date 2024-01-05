@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px;
+    padding: 26px 38px 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +25,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,6 +46,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
   }
 }
 
@@ -61,6 +63,10 @@
     font-size: 16px;
     line-height: 20px;
     width: 225px;
+    display: grid;
+    grid-template-columns: 132px 42px;
+    gap: 51px;
+    text-align: right;
   }
 }
 
