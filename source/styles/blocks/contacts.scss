@@ -17,11 +17,11 @@
   @media (min-width: $desktop-width) {
     min-width: 0;
     width: 407px;
-    padding: 60px 78px 60px 80px;
+    padding: 61px 78px 60px 80px;
     gap: 87px;
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: calc(50% - 610px);
   }
 
   &--primary {

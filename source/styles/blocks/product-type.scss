@@ -191,7 +191,7 @@
   &:hover {
     background-color: $background-color-secondary;
 
-    &::after{
+    &::after {
       background-image: url("../../images/icon-arrow-long.svg");
     }
   }

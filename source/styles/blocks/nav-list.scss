@@ -15,7 +15,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 30px;
     font-size: 20px;
     line-height: normal;
     color: #ffffff;
@@ -102,7 +101,7 @@
     }
   }
 
-  &--main-page{
+  &--main-page {
     @media (min-width: $desktop-width) {
       color: #ffffff;
     }

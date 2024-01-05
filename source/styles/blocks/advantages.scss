@@ -25,6 +25,10 @@
     line-height: 60px;
     margin-bottom: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .advantages__list {
@@ -79,7 +83,7 @@
       height: 80px;
       background-size: 30px 32px, 80px 80px;
       top: 40px;
-      left: 0px;
+      left: 0;
     }
 
     &::after {
@@ -97,7 +101,7 @@
       background-repeat: no-repeat;
       background-position: center;
       top: 0;
-      right: 0px;
+      right: 0;
       z-index: -1;
     }
 
@@ -115,32 +119,24 @@
     &::before {
       background-image: url("../../images/icon-healthy.svg"), linear-gradient($color-secondary, $color-secondary);
     }
-
-
   }
 
   &--easy {
     &::before {
       background-image: url("../../images/icon-easy.svg"), linear-gradient($color-secondary, $color-secondary);
     }
-
-
   }
 
   &--econom {
     &::before {
       background-image: url("../../images/icon-econom.svg"), linear-gradient($color-secondary, $color-secondary);
     }
-
-
   }
 
   &--fast {
     &::before {
       background-image: url("../../images/icon-fast.svg"), linear-gradient($color-secondary, $color-secondary);
     }
-
-
   }
 }
 
@@ -157,8 +153,8 @@
   }
 }
 
-.advantages__description br{
+.advantages__description br {
   @media (max-width: calc($tablet-width - 1px)) {
-    display: none;;
+    display: none;
   }
 }

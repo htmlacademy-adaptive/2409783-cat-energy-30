@@ -67,10 +67,19 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
 
-  &:active::before,
-  &:active::after {
-    background-color: opacify(#ffffff, 0.3);
+.main-nav__toggle:hover {
+  &::after,
+  &::before {
+    opacity: 0.7;
+  }
+}
+
+.main-nav__toggle:active {
+  &::after,
+  &::before {
+    opacity: 0.3;
   }
 }
 

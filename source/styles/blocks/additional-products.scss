@@ -25,6 +25,7 @@
     min-width: 895px;
     max-width: 100%;
     border: none;
+    margin: 0;
   }
 }
 
@@ -60,10 +61,20 @@
 
     &::before {
       width: 100vw;
-      min-width: 0;
       max-width: 100vw;
       top: 22px;
       left: -30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+
+    &::before {
+      width: 110vw;
+      max-width: 110vw;
+      top: 22px;
+      left: -110px;
     }
   }
 }
@@ -71,4 +82,8 @@
 .additional-products__gift {
   margin: 0 auto;
   margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
