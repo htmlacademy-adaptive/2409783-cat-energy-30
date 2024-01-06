@@ -1,0 +1,61 @@
+.radio-button__label {
+  margin-left: 45px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    top: 0;
+    left: -45px;
+  }
+
+  &::after {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    top: 9px;
+    left: -36px;
+  }
+
+  &:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 40px;
+    margin-left: 60px;
+
+    &::before {
+      width: 38px;
+      height: 38px;
+      left: -60px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      left: -50px;
+      top: 11px;
+    }
+  }
+}
+
+.radio-button__input:checked + .radio-button__label::after {
+  content: "";
+}

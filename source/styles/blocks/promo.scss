@@ -1,26 +1,40 @@
 .promo {
-  background: linear-gradient($color-secondary, $color-secondary 63%, $background-color-primary 63%, $background-color-primary);
+  background: linear-gradient($color-secondary, $color-secondary 61%, $background-color-primary 61%, $background-color-primary);
+  background-image:
+    image-set(
+    url("../../images/promo-background-mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/promo-background-mobile@2x.webp") type("image/webp") 2x,
+    url("../../images/promo-background-mobile@1x.png") type("image/png") 1x,
+    url("../../images/promo-background-mobile@2x.png") type("image/png") 2x
+  ),
+    linear-gradient(#63a63b, #63a63b 61%, $background-color-primary 61%, $background-color-primary);
+  background-size: 320px 302px, auto;
+  background-position: top center;
+  background-repeat: no-repeat;
   color: #ffffff;
   margin: 0 auto;
-  padding: 27px 30px 0;
+  padding: 27px 20px 0;
 
   @media (min-width: $tablet-width) {
     background: $background-color-primary;
     color: $text-color-primary;
-    padding-top: 65px;
+    padding: 61px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 84%;
     min-width: 1220px;
     background-color: transparent;
-    padding-top: 29px;
+    padding-top: 24px;
     margin-bottom: 82px;
   }
 }
 
 .promo__wrapper {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -36,24 +50,26 @@
     padding-left: 80px;
     margin: 0;
     grid-template-columns: 367px 552px;
-    grid-template-rows: auto 72px 54px auto;
+    grid-template-rows: auto 75px 54px auto;
   }
 }
 
 .promo__image {
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: -1px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-row: 2/5;
     margin-bottom: 0;
-    margin-top: 41px;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/-1;
+    margin-top: 0;
+    margin-bottom: 47px;
   }
 }
 
@@ -69,7 +85,7 @@
     line-height: 60px;
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,11 +117,15 @@
 }
 
 .promo__button {
+  width: 280px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
     grid-column: 2/3;
     grid-row: 3/4;
+    min-height: 54px;
+    width: 244px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,7 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page__body">
+<body>
   <header class="main-header main-header--main-page">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
@@ -25,12 +25,12 @@
           <img src="images/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy.">
         </picture>
       </a>
-      <nav class="main-header__main-nav main-nav">
+      <nav class="main-header__main-nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list nav-list">
-            <li class="nav-list__item nav-list__item--active">
-              <a class="nav-list__link nav-list__link--main-page">Главная</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-list__link--main-page nav-list__link--active" href="#">Главная</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link nav-list__link--main-page" href="catalog.html">Каталог продукции</a>
@@ -76,24 +76,29 @@
       <div class="products__wrapper">
         <h2 class="visually-hidden">Типы диет для котов и соответствующие продукты.</h2>
         <div class="products__slim product-type">
-          <h3 class="product-type__title">Похудение</h3>
-          <p class="product-type__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-            деревьям?
-            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="product-type__button button" href="catalog.html">Каталог slim</a>
+          <div class="product-type__wrapper product-type__wrapper--slim">
+            <h3 class="product-type__title">Похудение</h3>
+            <p class="product-type__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям?
+              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="product-type__button button" href="catalog.html">Каталог slim</a>
+          </div>
         </div>
         <div class="products__pro product-type">
-          <h3 class="product-type__title">Набор массы</h3>
-          <p class="product-type__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
-            Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="product-type__button button" href="catalog.html">Каталог Pro</a>
+          <div class="product-type__wrapper product-type__wrapper--pro">
+            <h3 class="product-type__title">Набор массы</h3>
+            <p class="product-type__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+              Energy
+              Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="product-type__button button" href="catalog.html">Каталог Pro</a>
+          </div>
         </div>
       </div>
     </section>
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="advantages__title">Как это работает</h2>
-        <ul class="advantages__list">
+        <ol class="advantages__list">
           <li class="advantages__item advantages__item--healthy">
             <h3 class="advantages__title visually-hidden">Полезно</h3>
             <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -109,9 +114,9 @@
           </li>
           <li class="advantages__item advantages__item--fast">
             <h3 class="advantages__title visually-hidden">Быстрый результат</h3>
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему<br>вашего питомца!</p>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
     <section class="example">
@@ -126,11 +131,11 @@
           <div class="example__statistics stats">
             <ul class="stats__list">
               <li class="stats__item">
-                <p class="stats__title">снижение веса</p>
+                <p class="stats__title"><span class="stats__title-text">снижение веса</span></p>
                 <p class="stats__number">5 КГ</p>
               </li>
               <li class="stats__item">
-                <p class="stats__title">затрачено времени</p>
+                <p class="stats__title"><span class="stats__title-text">затрачено времени</span></p>
                 <p class="stats__number">60 ДНЕЙ</p>
               </li>
             </ul>
@@ -139,39 +144,47 @@
         </div>
         <h3 class="visually-hidden">Слайдер сравнения кота до и после замены корма на Cat Energy Slim.</h3>
         <div class="example__compare-slider slider">
-          <picture class="slider__image slider__image--before">
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="images/cat-before-desktop@1.webp 1x, images/cat-before-desktop@2x.webp 2x" width="552"
-              height="499">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/cat-before-tablet@1.webp 1x, images/cat-before-tablet@2x.webp 2x" width="709" height="609">
-            <source type="image/webp" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x"
-              width="280" height="256">
-            <source media="(min-width: 1280px)"
-              srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x" width="552"
-              height="499">
-            <source media="(min-width: 768px)"
-              srcset="images/cat-before-tablet@1x.png 1x, mages/cat-before-tablet@2x.png 2x" width="709" height="609">
-            <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280"
-              height="256" alt="Кот Борис до смены корма на Cat Energy Slim.">
-          </picture>
+          <div class="slider__image-wrapper slider__image-wrapper--before" style="width: 50%;">
+            <picture class="slider__image">
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="images/cat-before-desktop@1.webp 1x, images/cat-before-desktop@2x.webp 2x" width="560"
+                height="512">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/cat-before-tablet@1.webp 1x, images/cat-before-tablet@2x.webp 2x" width="560"
+                height="512">
+              <source type="image/webp"
+                srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x" width="280"
+                height="256">
+              <source media="(min-width: 1280px)"
+                srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x" width="560"
+                height="512">
+              <source media="(min-width: 768px)"
+                srcset="images/cat-before-tablet@1x.png 1x, mages/cat-before-tablet@2x.png 2x" width="560" height="512">
+              <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280"
+                height="256" alt="Кот Борис до смены корма на Cat Energy Slim.">
+            </picture>
+          </div>
           <button class="slider__button" type="button">
             <span class="visually-hidden">Потяните чтобы увидеть результат изменения кота Бориса.</span>
           </button>
-          <picture class="slider__image slider__image--after">
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="images/cat-after-desktop@1.webp 1x, images/cat-after-desktop@2x.webp 2x" width="552" height="499">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/cat-after-tablet@1.webp 1x, images/cat-after-tablet@2x.webp 2x" width="709" height="609">
-            <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x"
-              width="280" height="256">
-            <source media="(min-width: 1280px)"
-              srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x" width="552" height="499">
-            <source media="(min-width: 768px)"
-              srcset="images/cat-after-tablet@1x.png 1x, mages/cat-after-tablet@2x.png 2x" width="709" height="609">
-            <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280"
-              height="256" alt="Кот Борис после смены корма на Cat Energy Slim.">
-          </picture>
+          <div class="slider__image-wrapper slider__image-wrapper--after">
+            <picture class="slider__image">
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="images/cat-after-desktop@1.webp 1x, images/cat-after-desktop@2x.webp 2x" width="560"
+                height="512">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/cat-after-tablet@1.webp 1x, images/cat-after-tablet@2x.webp 2x" width="560" height="512">
+              <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x"
+                width="280" height="256">
+              <source media="(min-width: 1280px)"
+                srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x" width="560"
+                height="512">
+              <source media="(min-width: 768px)"
+                srcset="images/cat-after-tablet@1x.png 1x, mages/cat-after-tablet@2x.png 2x" width="560" height="512">
+              <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280"
+                height="256" alt="Кот Борис после смены корма на Cat Energy Slim.">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
@@ -215,25 +228,16 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <p class="visually-hidden">Мы в Вконтакте.</p>
-                <svg class="social__icon" width="28" height="22">
-                  <use href="images/icons/stack.svg#vkontakte"></use>
-                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <p class="visually-hidden">Мы в Ютубе.</p>
-                <svg class="social__icon" width="28" height="22">
-                  <use href="images/icons/stack.svg#youtube"></use>
-                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <p class="visually-hidden">Мы в Телеграме.</p>
-                <svg class="social__icon" width="28" height="22">
-                  <use href="images/icons/stack.svg#telegram"></use>
-                </svg>
               </a>
             </li>
           </ul>
@@ -242,9 +246,6 @@
           <h2 class="visually-hidden">Наши разработчики.</h2>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
             <p class="copyright__text">HTML Academy</p>
-            <svg class="copyright__logo" width="27" height="34">
-              <use href="images/icons/stack.svg#logo-html-academy"></use>
-            </svg>
           </a>
         </div>
       </div>

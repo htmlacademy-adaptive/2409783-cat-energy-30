@@ -1,0 +1,99 @@
+.slider {
+  display: grid;
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  grid-template-columns: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    grid-template-columns: 560px;
+  }
+}
+
+.slider__image-wrapper {
+  overflow: hidden;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  background-color: $background-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient($background-color-primary, $background-color-primary 151px, $background-color-secondary 151px, $background-color-secondary);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient($background-color-primary, $background-color-primary 135px, $background-color-secondary 135px, $background-color-secondary);
+  }
+
+  &--before {
+    z-index: 3;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 138px;
+  width: 4px;
+  height: 256px;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 5;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 108px;
+    left: -18px;
+    width: 36px;
+    height: 36px;
+    background-color: $background-color-primary;
+    border: 2px solid #666666;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 119px;
+    left: -10px;
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../images/icons/stack.svg#slider-toggle");
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+
+  &:hover {
+    background-color: $color-secondary;
+
+    &::before {
+      border: 2px solid $color-secondary;
+    }
+
+    &::after {
+      background-color: $color-secondary;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 278px;
+    height: 512px;
+
+    &::before {
+      top: 236px;
+    }
+
+    &::after {
+      top: 247px;
+    }
+  }
+}

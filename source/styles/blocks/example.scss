@@ -6,15 +6,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient($background-color-primary, $background-color-primary 23%, $background-color-secondary 23%, $background-color-secondary);
+    background: linear-gradient($background-color-primary, $background-color-primary 135px, $background-color-secondary 135px, $background-color-secondary);
   }
 }
 
 .example__wrapper {
-  padding: 25px 20px 40px;
+  padding: 25px 20px 36px;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 30px 101px;
+    padding: 45px 30px 97px;
+    border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +25,15 @@
     width: 84%;
     min-width: 1220px;
     display: flex;
-    gap: 224px;
+    gap: 228px;
+    border: none;
+  }
+}
+
+.example__content {
+  @media (min-width: $desktop-width) {
+    width: 35%;
+    min-width: 432px;
   }
 }
 

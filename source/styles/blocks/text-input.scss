@@ -1,0 +1,97 @@
+.text-input {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  position: relative;
+}
+
+.text-input__label,
+.text-input__input {
+  font-family: inherit;
+  color: $text-color-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.text-input__label {
+  white-space: nowrap;
+  max-width: 95px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 118px;
+  }
+}
+
+.text-input__label sup {
+  position: static;
+  vertical-align: baseline;
+  font-size: inherit;
+}
+
+.text-input__input {
+  width: 100%;
+  padding: 14px 15px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  height: 45px;
+  border: 1px solid #e7e7e7;
+  min-height: 45px;
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 52px;
+    padding-left: 20px;
+  }
+}
+
+.text-input__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000000;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: right 0 top 0;
+
+  &--email {
+    mask-image: url("../../images/icons/stack.svg#icon-email");
+  }
+
+  &--phone {
+    mask-image: url("../../images/icons/stack.svg#icon-phone");
+  }
+}
+
+.text-input__input:focus + .text-input__icon {
+  background-color: $color-secondary;
+}
+
+.text-input--error .text-input__input {
+  border: 2px solid #ff8282;
+}
+
+.text-input--error .text-input__icon {
+  background-color: #ff8282;
+}
