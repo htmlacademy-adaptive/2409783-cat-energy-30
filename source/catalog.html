@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato-regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald-regular.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body>
+<body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
         <picture class="main-header__logo-image">
-          <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="70" height="59">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <source type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
           <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
         <picture class="main-header__logo-text">
-          <source media="(min-width: 1280px)" srcset="images/logo-text.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-text.svg" width="118" height="21">
           <img src="images/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy.">
         </picture>
       </a>
@@ -51,7 +53,7 @@
         <h2 class="visually-hidden">Каталог основных товаров</h2>
         <div class="products-catalog__list">
           <article class="products-catalog__item product-card">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--image" href="#">
               <picture class="product-card__image">
                 <source type="image/webp" media="(min-width: 1280px)"
                   srcset="images/can-chicken-500g-desktop@1.webp 1x, images/can-chicken-500g-desktop@2x.webp 2x"
@@ -62,16 +64,18 @@
                 <source type="image/webp"
                   srcset="images/can-chicken-500g-mobile@1x.webp 1x, images/can-chicken-500g-mobile@2x.webp 2x"
                   width="68" height="86">
-                <source media="(min-width: 1280px)"
+                <source type="image/png" media="(min-width: 1280px)"
                   srcset="images/can-chicken-500g-desktop@1x.png 1x, images/can-chicken-500g-desktop@2x.png 2x"
                   width="161" height="172">
-                <source media="(min-width: 768px)"
+                <source type="image/png" media="(min-width: 768px)"
                   srcset="images/can-chicken-500g-tablet@1x.png 1x, mages/can-chicken-500g-tablet@2x.png 2x" width="161"
                   height="172">
                 <img src="images/can-chicken-500g-mobile@1x.png" srcset="images/can-chicken-500g-mobile@2x.png 2x"
                   width="68" height="86"
                   alt="Предпологаемый вид пачки корма Cat Energy Pro со вкусом курицы (вес 500 г).">
               </picture>
+            </a>
+            <a class="product-card__link product-card__link--title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="product-card__list">
@@ -88,10 +92,10 @@
                 <dd class="product-card__info-description">700 ₽</dd>
               </div>
             </dl>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <a class="product-card__button button" href="#"><span class="button__text">Заказать</span></a>
           </article>
           <article class="products-catalog__item product-card">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--image" href="#">
               <picture class="product-card__image">
                 <source type="image/webp" media="(min-width: 1280px)"
                   srcset="images/can-chicken-1000g-desktop@1.webp 1x, images/can-chicken-1000g-desktop@2x.webp 2x"
@@ -102,16 +106,18 @@
                 <source type="image/webp"
                   srcset="images/can-chicken-1000g-mobile@1x.webp 1x, images/can-chicken-1000g-mobile@2x.webp 2x"
                   width="84" height="100">
-                <source media="(min-width: 1280px)"
+                <source type="image/png" media="(min-width: 1280px)"
                   srcset="images/can-chicken-1000g-desktop@1x.png 1x, images/can-chicken-1000g-desktop@2x.png 2x"
                   width="172" height="196">
-                <source media="(min-width: 768px)"
+                <source type="image/png" media="(min-width: 768px)"
                   srcset="images/can-chicken-1000g-tablet@1x.png 1x, mages/can-chicken-1000g-tablet@2x.png 2x"
                   width="168" height="206">
                 <img src="images/can-chicken-1000g-mobile@1x.png" srcset="images/can-chicken-1000g-mobile@2x.png 2x"
                   width="84" height="100"
                   alt="Предпологаемый вид пачки корма Cat Energy Pro со вкусом курицы (вес 1000 г).">
               </picture>
+            </a>
+            <a class="product-card__link product-card__link--title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="product-card__list">
@@ -128,10 +134,10 @@
                 <dd class="product-card__info-description">1000 ₽</dd>
               </div>
             </dl>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <a class="product-card__button button" href="#"><span class="button__text">Заказать</span></a>
           </article>
           <article class="products-catalog__item product-card">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--image" href="#">
               <picture class="product-card__image">
                 <source type="image/webp" media="(min-width: 1280px)"
                   srcset="images/can-fish-500g-desktop@1.webp 1x, images/can-fish-500g-desktop@2x.webp 2x" width="163"
@@ -142,15 +148,17 @@
                 <source type="image/webp"
                   srcset="images/can-fish-500g-mobile@1x.webp 1x, images/can-fish-500g-mobile@2x.webp 2x" width="68"
                   height="78">
-                <source media="(min-width: 1280px)"
+                <source type="image/png" media="(min-width: 1280px)"
                   srcset="images/can-fish-500g-desktop@1x.png 1x, images/can-fish-500g-desktop@2x.png 2x" width="163"
                   height="174">
-                <source media="(min-width: 768px)"
+                <source type="image/png" media="(min-width: 768px)"
                   srcset="images/can-fish-500g-tablet@1x.png 1x, mages/can-fish-500g-tablet@2x.png 2x" width="163"
                   height="174">
                 <img src="images/can-fish-500g-mobile@1x.png" srcset="images/can-fish-500g-mobile@2x.png 2x" width="68"
                   height="78" alt="Предпологаемый вид пачки корма Cat Energy Pro со вкусом рыбы (вес 500 г).">
               </picture>
+            </a>
+            <a class="product-card__link product-card__link--title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="product-card__list">
@@ -167,10 +175,10 @@
                 <dd class="product-card__info-description">700 ₽</dd>
               </div>
             </dl>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <a class="product-card__button button" href="#"><span class="button__text">Заказать</span></a>
           </article>
           <article class="products-catalog__item product-card">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--image" href="#">
               <picture class="product-card__image">
                 <source type="image/webp" media="(min-width: 1280px)"
                   srcset="images/can-fish-1000g-desktop@1.webp 1x, images/can-fish-1000g-desktop@2x.webp 2x" width="172"
@@ -181,16 +189,18 @@
                 <source type="image/webp"
                   srcset="images/can-fish-1000g-mobile@1x.webp 1x, images/can-fish-1000g-mobile@2x.webp 2x" width="84"
                   height="100">
-                <source media="(min-width: 1280px)"
+                <source type="image/png" media="(min-width: 1280px)"
                   srcset="images/can-fish-1000g-desktop@1x.png 1x, images/can-fish-1000g-desktop@2x.png 2x" width="172"
                   height="196">
-                <source media="(min-width: 768px)"
+                <source type="image/png" media="(min-width: 768px)"
                   srcset="images/can-fish-1000g-tablet@1x.png 1x, mages/can-fish-1000g-tablet@2x.png 2x" width="168"
                   height="200">
                 <img src="images/can-fish-1000g-mobile@1x.png" srcset="images/can-fish-1000g-mobile@2x.png 2x"
                   width="84" height="100"
                   alt="Предпологаемый вид пачки корма Cat Energy Pro со вкусом рыбы (вес 1000 г).">
               </picture>
+            </a>
+            <a class="product-card__link product-card__link--title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="product-card__list">
@@ -207,10 +217,10 @@
                 <dd class="product-card__info-description">1000 ₽</dd>
               </div>
             </dl>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <a class="product-card__button button" href="#"><span class="button__text">Заказать</span></a>
           </article>
           <article class="products-catalog__item product-card">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--image" href="#">
               <picture class="product-card__image">
                 <source type="image/webp" media="(min-width: 1280px)"
                   srcset="images/can-buckwheat-500g-desktop@1.webp 1x, images/can-buckwheat-500g-desktop@2x.webp 2x"
@@ -221,16 +231,18 @@
                 <source type="image/webp"
                   srcset="images/can-buckwheat-500g-mobile@1x.webp 1x, images/can-buckwheat-500g-mobile@2x.webp 2x"
                   width="68" height="78">
-                <source media="(min-width: 1280px)"
+                <source type="image/png" media="(min-width: 1280px)"
                   srcset="images/can-buckwheat-500g-desktop@1x.png 1x, images/can-buckwheat-500g-desktop@2x.png 2x"
                   width="161" height="171">
-                <source media="(min-width: 768px)"
+                <source type="image/png" media="(min-width: 768px)"
                   srcset="images/can-buckwheat-500g-tablet@1x.png 1x, mages/can-buckwheat-500g-tablet@2x.png 2x"
                   width="161" height="171">
                 <img src="images/can-buckwheat-500g-mobile@1x.png" srcset="images/can-buckwheat-500g-mobile@2x.png 2x"
                   width="68" height="78"
                   alt="Предпологаемый вид пачки корма Cat Energy Slim со вкусом гречки (вес 500 г).">
               </picture>
+            </a>
+            <a class="product-card__link product-card__link--title" href="#">
               <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
             </a>
             <dl class="product-card__list">
@@ -247,10 +259,10 @@
                 <dd class="product-card__info-description">400 ₽</dd>
               </div>
             </dl>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <a class="product-card__button button" href="#"><span class="button__text">Заказать</span></a>
           </article>
           <article class="products-catalog__item product-card">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--image" href="#">
               <picture class="product-card__image">
                 <source type="image/webp" media="(min-width: 1280px)"
                   srcset="images/can-buckwheat-1000g-desktop@1.webp 1x, images/can-buckwheat-1000g-desktop@2x.webp 2x"
@@ -261,16 +273,18 @@
                 <source type="image/webp"
                   srcset="images/can-buckwheat-1000g-mobile@1x.webp 1x, images/can-buckwheat-1000g-mobile@2x.webp 2x"
                   width="84" height="100">
-                <source media="(min-width: 1280px)"
+                <source type="image/png" media="(min-width: 1280px)"
                   srcset="images/can-buckwheat-1000g-desktop@1x.png 1x, images/can-buckwheat-1000g-desktop@2x.png 2x"
                   width="172" height="196">
-                <source media="(min-width: 768px)"
+                <source type="image/png" media="(min-width: 768px)"
                   srcset="images/can-buckwheat-1000g-tablet@1x.png 1x, mages/can-buckwheat-1000g-tablet@2x.png 2x"
                   width="168" height="200">
                 <img src="images/can-buckwheat-1000g-mobile@1x.png" srcset="images/can-buckwheat-1000g-mobile@2x.png 2x"
                   width="84" height="100"
                   alt="Предпологаемый вид пачки корма Cat Energy Slim со вкусом гречки (вес 1000 г).">
               </picture>
+            </a>
+            <a class="product-card__link product-card__link--title" href="#">
               <h3 class="product-card__title">Cat Energy SLIM 1000 г</h3>
             </a>
             <dl class="product-card__list">
@@ -287,10 +301,10 @@
                 <dd class="product-card__info-description">700 ₽</dd>
               </div>
             </dl>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <a class="product-card__button button" href="#"><span class="button__text">Заказать</span></a>
           </article>
           <article class="products-catalog__item product-card">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--image" href="#">
               <picture class="product-card__image">
                 <source type="image/webp" media="(min-width: 1280px)"
                   srcset="images/can-rice-500g-desktop@1.webp 1x, images/can-rice-500g-desktop@2x.webp 2x" width="163"
@@ -301,15 +315,17 @@
                 <source type="image/webp"
                   srcset="images/can-rice-500g-mobile@1x.webp 1x, images/can-rice-500g-mobile@2x.webp 2x" width="72"
                   height="84">
-                <source media="(min-width: 1280px)"
+                <source type="image/png" media="(min-width: 1280px)"
                   srcset="images/can-rice-500g-desktop@1x.png 1x, images/can-rice-500g-desktop@2x.png 2x" width="163"
                   height="174">
-                <source media="(min-width: 768px)"
+                <source type="image/png" media="(min-width: 768px)"
                   srcset="images/can-rice-500g-tablet@1x.png 1x, mages/can-rice-500g-tablet@2x.png 2x" width="163"
                   height="174">
                 <img src="images/can-rice-500g-mobile@1x.png" srcset="images/can-rice-500g-mobile@2x.png 2x" width="72"
                   height="84" alt="Предпологаемый вид пачки корма Cat Energy Slim со вкусом риса (вес 500 г).">
               </picture>
+            </a>
+            <a class="product-card__link product-card__link--title" href="#">
               <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
             </a>
             <dl class="product-card__list">
@@ -326,10 +342,10 @@
                 <dd class="product-card__info-description">500 ₽</dd>
               </div>
             </dl>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <a class="product-card__button button" href="#"><span class="button__text">Заказать</span></a>
           </article>
           <div class="products-catalog__item product-card product-card--more">
-            <button class="product-card__more-button" type="button"><p class="visually-hidden">Показать все</p></button>
+            <button class="product-card__more-button" type="button"><span class="visually-hidden">Показать все</span></button>
             <h3 class="product-card__title">Показать еще 100500 товаров</h3>
             <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
             <button class="product-card__button button" type="button">Показать все</button>
@@ -349,7 +365,7 @@
                     <p class="additional-product-card__price">200 ₽</p>
                   </div>
                 </div>
-                <a class="dditional-product-card__button button" href="#">Заказать</a>
+                <a class="additional-product-card__button button" href="#"><span class="button__text">Заказать</span></a>
               </li>
               <li class="additional-products__item additional-product-card">
                 <div class="additional-product-card__content">
@@ -359,7 +375,7 @@
                     <p class="additional-product-card__price">50 ₽</p>
                   </div>
                 </div>
-                <a class="dditional-product-card__button button" href="#">Заказать</a>
+                <a class="additional-product-card__button button" href="#"><span class="button__text">Заказать</span></a>
               </li>
               <li class="additional-products__item additional-product-card">
                 <div class="additional-product-card__content">
@@ -369,7 +385,7 @@
                     <p class="additional-product-card__price">100 ₽</p>
                   </div>
                 </div>
-                <a class="dditional-product-card__button button" href="#">Заказать</a>
+                <a class="additional-product-card__button button" href="#"><span class="button__text">Заказать</span></a>
               </li>
               <li class="additional-products__item additional-product-card">
                 <div class="additional-product-card__content">
@@ -379,7 +395,7 @@
                     <p class="additional-product-card__price">300 ₽</p>
                   </div>
                 </div>
-                <a class="dditional-product-card__button button" href="#">Заказать</a>
+                <a class="additional-product-card__button button" href="#"><span class="button__text">Заказать</span></a>
               </li>
             </ul>
             <div class="additional-products__gift gift">

@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato-regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald-regular.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body>
+<body class="page__body">
   <header class="main-header main-header--main-page">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
         <picture class="main-header__logo-image">
-          <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="70" height="59">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <source type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
           <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
         <picture class="main-header__logo-text">
-          <source media="(min-width: 1280px)" srcset="images/logo-text.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-text.svg" width="118" height="21">
           <img src="images/logo-text.svg" width="101" height="18" alt="Надпись Cat Energy.">
         </picture>
       </a>
@@ -56,16 +58,16 @@
           <source type="image/webp"
             srcset="images/promo-example-mobile@1x.webp 1x, images/promo-example-mobile@2x.webp 2x" width="280"
             height="270">
-          <source media="(min-width: 1280px)"
+          <source type="image/png" media="(min-width: 1280px)"
             srcset="images/promo-example-desktop@1x.png 1x, images/promo-example-desktop@2x.png 2x" width="552"
             height="499">
-          <source media="(min-width: 768px)"
+          <source type="image/png" media="(min-width: 768px)"
             srcset="images/promo-example-tablet@1x.png 1x, mages/promo-example-tablet@2x.png 2x" width="709"
             height="609">
           <img src="images/promo-example-mobile@1x.png" srcset="images/promo-example-mobile@2x.png 2x" width="280"
             height="270" alt="Пример корма Cat Energy.">
         </picture>
-        <a class="promo__button button" href="form.html">Подобрать программу</a>
+        <a class="promo__button button" href="form.html"><span class="button__text">Подобрать программу</span></a>
       </div>
     </section>
   </header>
@@ -126,7 +128,7 @@
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-            часов в день. </p>
+            часов в день.</p>
           <h3 class="visually-hidden">Статистика улучшений.</h3>
           <div class="example__statistics stats">
             <ul class="stats__list">
@@ -155,10 +157,10 @@
               <source type="image/webp"
                 srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x" width="280"
                 height="256">
-              <source media="(min-width: 1280px)"
+              <source type="image/png" media="(min-width: 1280px)"
                 srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x" width="560"
                 height="512">
-              <source media="(min-width: 768px)"
+              <source type="image/png" media="(min-width: 768px)"
                 srcset="images/cat-before-tablet@1x.png 1x, mages/cat-before-tablet@2x.png 2x" width="560" height="512">
               <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280"
                 height="256" alt="Кот Борис до смены корма на Cat Energy Slim.">
@@ -176,10 +178,10 @@
                 srcset="images/cat-after-tablet@1.webp 1x, images/cat-after-tablet@2x.webp 2x" width="560" height="512">
               <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x"
                 width="280" height="256">
-              <source media="(min-width: 1280px)"
+              <source type="image/png" media="(min-width: 1280px)"
                 srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x" width="560"
                 height="512">
-              <source media="(min-width: 768px)"
+              <source type="image/png" media="(min-width: 768px)"
                 srcset="images/cat-after-tablet@1x.png 1x, mages/cat-after-tablet@2x.png 2x" width="560" height="512">
               <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280"
                 height="256" alt="Кот Борис после смены корма на Cat Energy Slim.">
@@ -195,7 +197,7 @@
       <div class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Наше местоположение</h2>
         <div class="contacts__content">
-          <p class="contacts__headline">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <p class="contacts__headline">Приглашаем<br>к сотрудничеству дилеров!</p>
           <div class="contacts__address">
             <p class="contacts__street">ул. Большая Конюшенная, д.19/8</p>
             <p class="contacts__city">Санкт-Петербург</p>

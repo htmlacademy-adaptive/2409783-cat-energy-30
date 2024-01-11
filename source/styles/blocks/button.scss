@@ -10,12 +10,19 @@
   text-decoration: none;
   border: none;
   min-height: 40px;
+  box-sizing: border-box;
+  padding: 5px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #5eaa2f;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:disabled {
+    opacity: 0.5;
   }
+}
+
+.button:active .button__text {
+  opacity: 0.3;
 }

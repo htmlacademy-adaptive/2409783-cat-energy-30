@@ -2,11 +2,11 @@
   background-color: $color-secondary;
   background-image:
     image-set(
-     url("../../images/gift-background-mobile@1x.webp") type("image/webp") 1x,
-     url("../../images/gift-background-mobile@2x.webp") type("image/webp") 2x,
-     url("../../images/gift-background-mobile@1x.png") type("image/png") 1x,
-     url("../../images/gift-background-mobile@2x.png") type("image/png") 2x
-   );
+      url("../../images/gift-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/gift-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/gift-background-mobile@1x.png") type("image/png") 1x,
+      url("../../images/gift-background-mobile@2x.png") type("image/png") 2x
+    );
   background-size: cover;
   min-height: 290px;
   max-width: 500px;

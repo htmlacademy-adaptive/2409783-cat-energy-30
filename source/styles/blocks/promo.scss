@@ -26,7 +26,6 @@
     min-width: 1220px;
     background-color: transparent;
     padding-top: 24px;
-    margin-bottom: 82px;
   }
 }
 
@@ -50,7 +49,7 @@
     padding-left: 80px;
     margin: 0;
     grid-template-columns: 367px 552px;
-    grid-template-rows: auto 75px 54px auto;
+    grid-template-rows: auto auto 54px auto;
   }
 }
 
@@ -92,6 +91,7 @@
     grid-column: 1/-1;
     grid-row: 1/2;
     margin-top: 81px;
+    width: 50%;
   }
 }
 

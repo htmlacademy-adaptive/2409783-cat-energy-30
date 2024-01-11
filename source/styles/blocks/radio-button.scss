@@ -37,6 +37,10 @@
     opacity: 0.3;
   }
 
+  &:disabled {
+    opacity: 0.5;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 40px;
     margin-left: 60px;
@@ -58,4 +62,8 @@
 
 .radio-button__input:checked + .radio-button__label::after {
   content: "";
+}
+
+.radio-button__input:focus + .radio-button__label::before {
+  border: 1px solid #444444;
 }
