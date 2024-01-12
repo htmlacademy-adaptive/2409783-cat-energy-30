@@ -18,7 +18,7 @@
   background-color: $background-color-secondary;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient($background-color-primary, $background-color-primary 151px, $background-color-secondary 151px, $background-color-secondary);
+    background: linear-gradient($background-color-primary, $background-color-primary 149px, $background-color-secondary 149px, $background-color-secondary);
   }
 
   @media (min-width: $desktop-width) {

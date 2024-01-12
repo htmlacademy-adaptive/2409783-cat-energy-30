@@ -7,7 +7,7 @@
     url("../../images/promo-background-mobile@1x.png") type("image/png") 1x,
     url("../../images/promo-background-mobile@2x.png") type("image/png") 2x
   ),
-    linear-gradient(#63a63b, #63a63b 61%, $background-color-primary 61%, $background-color-primary);
+    linear-gradient(#63a63b, #63a63b 302px, $background-color-primary 302px, $background-color-primary);
   background-size: 320px 302px, auto;
   background-position: top center;
   background-repeat: no-repeat;
@@ -26,7 +26,6 @@
     min-width: 1220px;
     background-color: transparent;
     padding-top: 24px;
-    margin-bottom: 82px;
   }
 }
 
@@ -50,7 +49,7 @@
     padding-left: 80px;
     margin: 0;
     grid-template-columns: 367px 552px;
-    grid-template-rows: auto 75px 54px auto;
+    grid-template-rows: auto auto 54px auto;
   }
 }
 
@@ -92,6 +91,7 @@
     grid-column: 1/-1;
     grid-row: 1/2;
     margin-top: 81px;
+    width: 50%;
   }
 }
 
