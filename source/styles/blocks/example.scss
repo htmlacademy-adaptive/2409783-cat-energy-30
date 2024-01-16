@@ -2,7 +2,7 @@
   background-color: $background-color-secondary;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient($background-color-primary, $background-color-primary 57%, $background-color-secondary 57%, $background-color-secondary);
+    background: linear-gradient(to top, $background-color-secondary, $background-color-secondary 464px, $background-color-primary 464px, $background-color-primary);
   }
 
   @media (min-width: $desktop-width) {
