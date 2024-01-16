@@ -187,6 +187,7 @@
 .form__section--owner-info .form__list {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     column-gap: 80px;
     width: 84%;

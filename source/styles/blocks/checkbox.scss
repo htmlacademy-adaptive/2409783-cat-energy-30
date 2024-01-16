@@ -36,10 +36,6 @@
     opacity: 0.3;
   }
 
-  &:disabled {
-    opacity: 0.5;
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 40px;
     margin-left: 60px;
@@ -64,4 +60,12 @@
 
 .checkbox__input:focus + .checkbox__label::before {
   border: 2px solid #444444;
+}
+
+.checkbox__input:disabled + .checkbox__label {
+  opacity: 0.5;
+
+  &::before {
+    border: 2px solid #bababa;
+  }
 }

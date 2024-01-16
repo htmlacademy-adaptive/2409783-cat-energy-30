@@ -67,3 +67,11 @@
 .radio-button__input:focus + .radio-button__label::before {
   border: 1px solid #444444;
 }
+
+.radio-button__input:disabled + .radio-button__label {
+  opacity: 0.5;
+
+  &::before {
+    border: 2px solid #bababa;
+  }
+}

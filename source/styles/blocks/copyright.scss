@@ -27,7 +27,8 @@
     background-color: $social-icon-color;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     background-color: $color-secondary;
   }
 
