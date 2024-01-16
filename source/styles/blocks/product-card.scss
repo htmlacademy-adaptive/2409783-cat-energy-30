@@ -73,7 +73,7 @@
 
     @media (min-width: $tablet-width) {
       justify-content: center;
-      margin-top: 0;
+      margin: 0;
     }
   }
 
@@ -251,7 +251,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 40px;
+    margin-top: 38px;
+    margin-bottom: 23px;
   }
 }
 

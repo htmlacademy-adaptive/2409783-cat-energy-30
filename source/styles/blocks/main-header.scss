@@ -6,8 +6,8 @@
         image-set(
         url("../../images/promo-background-desktop@1x.webp") type("image/webp") 1x,
         url("../../images/promo-background-desktop@2x.webp") type("image/webp") 2x,
-        url("../../images/promo-background-desktop@1x.png") type("image/png") 1x,
-        url("../../images/promo-background-desktop@2x.png") type("image/png") 2x
+        url("../../images/promo-background-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/promo-background-desktop@2x.jpg") type("image/jpg") 2x
       ),
         linear-gradient(to right, $background-color-primary, $background-color-primary 50%, #64a73c 50%, #64a73c);
       background-size: 720px 694px, auto;
